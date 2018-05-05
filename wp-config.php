@@ -3,7 +3,6 @@
 $table_prefix  = 'wp_';
 
 define('WP_DEBUG', true);
-
 define('DB_HOST', $_ENV['DB_HOST']);
 define('DB_NAME', $_ENV['DB_NAME']);
 define('DB_USER', $_ENV['DB_USER']);
@@ -20,6 +19,8 @@ if (getenv('NOW_URL')) {
 
 define('WP_SITEURL', $protocol . '://' . $_SERVER['HTTP_HOST']);
 define('WP_HOME', $protocol . $_SERVER['HTTP_HOST']);
+
+define('WP_ALLOW_REPAIR', true);
 
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');

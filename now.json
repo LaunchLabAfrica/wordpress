@@ -1,12 +1,7 @@
 {
+  "name": "launchlab.africa-cwfe",
+  "alias": "launchlab.africa-cwfe",
   "dotenv": true,
-  "env": [
-    "DB_HOST",
-    "DB_NAME",
-    "DB_USER",
-    "DB_PASSWORD",
-    "SENDGRID_API_KEY",
-    "SENDGRID_FROM_NAME",
-    "SENDGRID_FROM_EMAIL"
-  ]
+  "dotenv": ".env",
+  "type": "docker"
 }
